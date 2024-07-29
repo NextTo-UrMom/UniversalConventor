@@ -5,14 +5,12 @@ let output = document.getElementById("output");
 function convert() {
     From = document.getElementById("From").value
     To = document.getElementById("To").value
-    if (document.getElementById(From).getAttribute("class") == "metric" && document.getElementById(To).getAttribute("class") == "metric") {
+    if (document.getElementById(To).getAttribute("class") == "metric") {
         metric();
         console.log("It works");
     }
-    else if (document.getElementById(From).getAttribute("class") == "british" && document.getElementById(To).getAttribute("class") == "british") {
+    else if (document.getElementById(To).getAttribute("class") == "british") {
         british();
-    } else {
-        british_and_metric();
     }
 }
 function metric() {
@@ -51,6 +49,18 @@ function british() {
     let inches;
     input = document.getElementById("input").value
     switch(From){
+        case "mm":
+        inches = input/1000;
+            break;
+        case "cm":
+            inches = input/2.54;
+            break;
+        case "m":
+            inches = input*39.3700787;
+            break;
+        case "km":
+            inches = input*39370.0787;
+            break;
         case "in":
             inches = input
         break;
@@ -90,7 +100,4 @@ function british() {
             output.innerHTML = input/190193.71981+To
         break;
     }
-}
-function british_and_metric() {
-
 }
