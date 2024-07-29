@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conventor</title>
+</head>
+<body>
+    <label for="From">From</label>
+    <input type="text" name="input" id="input">
+    <select name="Distance" id="From">
+        <option value="default" id="default">Select</option>
+        <option value="mm" id="mm" class="metric">Millimetre(mm) </option>
+        <option value="cm" id="cm" class="metric">Centimetre(cm) </option>
+        <option value="m" id="m" class="metric">Metre(m) </option>
+        <option value="km" id="km" class="metric">Kilometre(km) </option>
+        <option value="in" id="in" class="british">Inch(in) </option>
+        <option value="ft" id="ft" class="british">Feet(ft) </option>
+        <option value="yd" id="yd" class="british">Yard(yd)</option>
+        <option value="furlong" id="furlong" class="british">Furlong(furlong)</option>
+        <option value="mi" id="mi" class="british">Mile(mi) </option>
+        <option value="L" id="L" class="british">League(L) </option>
+    </select>
+    
+    <label for="To">To</label>
+    <select name="Distance" id="To">
+        <option value="default" id="default">Select</option>
+        <option value="mm" id="mm" class="metric">Millimetre(mm) </option>
+        <option value="cm" id="cm" class="metric">Centimetre(cm) </option>
+        <option value="m" id="m" class="metric">Metre(m) </option>
+        <option value="km" id="km" class="metric">Kilometre(km) </option>
+        <option value="in" id="in" class="british">Inch(in) </option>
+        <option value="ft" id="ft" class="british">Feet(ft) </option>
+        <option value="yd" id="yd" class="british">Yard(yd)</option>
+        <option value="furlong" id="furlong" class="british">Furlong(furlong)</option>
+        <option value="mi" id="mi" class="british">Mile(mi) </option>
+        <option value="L" id="L" class="british">UKLeague(L) </option>
+    </select>
+    <button type="button" onclick="convert()">Convert</button>
+    <div id="output">This is output</div>
+</body>
+<script src="distance.js"></script>
+</html>
