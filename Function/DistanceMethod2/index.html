@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conventor</title>
+</head>
+<body>
+    <label for="From">From</label>
+    <input type="text" name="input" id="input">
+    <select name="Distance" id="From">
+        <option value="default" id="default">Select</option>
+        <option value="0" >Millimetre(mm) </option>
+        <option value="1" >Centimetre(cm) </option>
+        <option value="2">Metre(m) </option>
+        <option value="3" >Kilometre(km) </option>
+        <option value="4">Inch(in) </option>
+        <option value="5">Feet(ft) </option>
+        <option value="6">Yard(yd)</option>
+        <option value="7">Furlong(furlong)</option>
+        <option value="8">Mile(mi) </option>
+    </select>
+    
+    <label for="To">To</label>
+    <select name="Distance" id="To">
+        <option value="default" id="default">Select</option>
+        <option value="0" >Millimetre(mm) </option>
+        <option value="1" >Centimetre(cm) </option>
+        <option value="2">Metre(m) </option>
+        <option value="3" >Kilometre(km) </option>
+        <option value="4">Inch(in) </option>
+        <option value="5">Foot(ft) </option>
+        <option value="6">Yard(yd)</option>
+        <option value="7">Furlong(furlong)</option>
+        <option value="8">Mile(mi) </option>    </select>
+    <button type="button" onclick="convert()">Convert</button>
+    <div id="output">This is output</div>
+</body>
+<script src="distance.js"></script>
+</html>
