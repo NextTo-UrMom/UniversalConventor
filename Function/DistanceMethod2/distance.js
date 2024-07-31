@@ -12,9 +12,8 @@ let conversion_data = [
     [1609e+6,160934,1609.34,1.60934,63360,5280,1760,8,1]//miles
 ]
 function convert() {
-    let From = document.getElementById("From").value *1
-    let To = document.getElementById("To").value *1
+    let From = document.getElementById("From").value 
+    let To = document.getElementById("To").value 
     input = document.getElementById("input").value
     output.innerHTML = input*conversion_data[From][To]
-    
 }
