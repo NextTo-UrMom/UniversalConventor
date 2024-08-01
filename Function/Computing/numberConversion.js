@@ -4,6 +4,7 @@ function convert() {
     let input = document.getElementById("input").value
     let output = document.getElementById("output")
     let BinaryData = "";
+    
     switch (From) {
         case "0":
             BinaryData = DecToBi(input)
